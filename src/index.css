@@ -1,0 +1,246 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+}
+.top-wrapper {
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+.top {
+  padding: 6px 20px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1060px;
+  min-width: 600px;
+}
+#logo {
+  width: 94px;
+  height: 30px;
+  background-image: url(https://www.v2ex.com/static/img/v2ex@2x.png);
+  background-size: 94px 30px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+  text-decoration: none;
+  float: left;
+}
+.top .topList li {
+  padding: 5px 3px;
+}
+.top .topList li a:link {
+  color: rgb(85, 85, 102);
+}
+.top .topList li a:visited {
+  color: rgb(85, 85, 102);
+}
+.top .topList li a:hover {
+  color: rgb(153, 153, 170);
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #e2e2e2;
+}
+.content {
+  max-width: 1060px;
+  min-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.sep {
+  padding: 20px 20px 0px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: scroll;
+  background-color: #e2e2e2;
+}
+.post {
+  display: flex;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 120%;
+  border-bottom: 1px solid #e2e2e2;
+}
+.post a {
+  display: inline-block;
+  height: 49px;
+}
+.post img {
+  display: flex;
+  flex-direction: row;
+  width: 48px;
+  height: 49px;
+}
+.post-text {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+  flex-grow: 2;
+}
+.post-title {
+  color: #778087;
+  word-break: break-word;
+  font-size: 16px;
+  line-height: 130%;
+  text-shadow: 0 1px 0 #fff;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+.post-nodeTitle {
+  background-color: #f5f5f5;
+  font-size: 12px;
+  line-height: 12px;
+  display: inline-block;
+  padding: 4px 4px 4px 4px;
+  border-radius: 2px;
+  color: #999;
+  margin-right: 15px;
+}
+
+.detail-headerContent {
+  display: flex;
+  padding: 10px 150px 10px 10px;
+  border-bottom: 1px solid #e2e2e2;
+  justify-content: space-between;
+}
+.detail-headerContent h1 {
+  margin-bottom: 0;
+}
+
+.detail-avatar img {
+  width: 73px;
+  height: 73px;
+}
+.detail-content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+  word-break: break-word;
+  padding: 10px;
+}
+
+.replayAmount {
+  width: 70px;
+  text-align: right;
+  vertical-align: middle;
+  align-self: center;
+}
+
+.replayAmount-text {
+  line-height: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #aab0c6;
+  padding: 2px 10px 2px 10px;
+  border-radius: 12px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.post-username {
+  color: #778087;
+}
+.time {
+  display: inline-block;
+}
+.replay-username {
+  display: inline-block;
+  margin-right: 5px;
+}
+.replay-loading {
+  margin-top: 250px;
+}
+.post-text h3 {
+  margin: 0 0 15px;
+}
+.nav-wrapper {
+  height: 100%;
+}
+.nav {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  background-color: #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.loading-background {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+}
+.loading {
+  animation: rotate 2s linear infinite normal running;
+  margin: 0 auto;
+  display: block;
+  align-self: center;
+}
+.detail-loading{
+  height: 100%;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.avatar_normal {
+  border-radius: 4px;
+}
+.post .information-avatar {
+  width: 73px;
+  height: 73px;
+}
+.post h1 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+}
+.information-text {
+  font-size: 14px;
+  line-height: 120%;
+  text-align: left;
+  color: #999;
+}
